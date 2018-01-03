@@ -53,7 +53,7 @@ public class UserRegisterController {
 	@RequestMapping(value = "/deleteuserdata", method = RequestMethod.DELETE)
     public String deleteUser(@RequestParam("userId") int userId, ModelAndView model) {
 		userService.deleteUser(userId);
-     return "successfully deleted";
+     return "user successfully deleted";
     }
 	
 	@RequestMapping(value = "/edituserdata")
@@ -65,6 +65,6 @@ public class UserRegisterController {
 	@RequestMapping(value = "/updateuserdata", method = RequestMethod.PUT )
     public String updateUser(@RequestBody User user) {
 		userService.updateUser(user);
-     return "update Success.....";
+     return "update Success for all users11.....";
     }
 }
